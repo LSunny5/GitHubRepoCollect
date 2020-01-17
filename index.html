@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>See List of GitHub Repositories</title>
+    <meta name="description" content="See a list of repos created by GitHub handle added by Sunny Lee 2020">
+    <link rel="stylesheet" href="index.css" type="text/css"/>
+</head>
+<body>
+    <main>
+        <h1>See List of GitHub Repos</h1>
+        <form>
+            <label for="handle">Please enter the GitHub User name: </label>
+            <input type="text" name="handle" id="handle" placeholder="Please enter handle name..." required>
+            <button type="submit" class="submitButton">Search</button>
+        </form>
+        
+        <section class="results hidden">
+        </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+   </body>
+</html>
