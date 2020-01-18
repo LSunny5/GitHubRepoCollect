@@ -32,10 +32,9 @@ function displayList(userList, uName) {
 
         //print repos with name and link to repo URL
         for (let i = 0; i < userList.length; i++) {
-            let repoUrl= `https://github.com/${uName}/${userList[i].name}`;
             let repo =
                 `<li><p class="repoName">${userList[i].name}
-                <a href="${repoUrl} target='_blank'">${repoUrl}</a></p>
+                <a href="${userList[i].html_url}" target='_blank'>${userList[i].html_url}</a></p>
                 </li>`;
             $('.repoList').append(repo);
         }
